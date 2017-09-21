@@ -1,0 +1,336 @@
+/*container*/
+
+.bg {
+  background-image: url('../img/9edf0ad7.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(90%);
+}
+
+.wrapper {
+  z-index: 5;
+  width: 70%;
+  /*border: 1px red solid;*/
+  padding: 20px;
+  background-color: /*#e9e9b3;*/
+  #b6d3be;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .1), 0 6px 20px 0 rgba(0, 0, 0, .5);
+}
+
+.main-logo img {
+  z-index: 10;
+  float: left;
+  width: 65px;
+  height: 70px;
+  border: 1px grey solid;
+}
+
+.main-logo {
+  display: flex;
+  justify-content: left;
+}
+
+.main-logo h3 {
+  font-weight: bold;
+  margin-left: 40px;
+  color: #373433;
+}
+
+.logo-div {
+  z-index: 1;
+  width: 65px;
+  height: 70px;
+  background-color: white;
+}
+
+.nav-style {
+  position: absolute;
+  top: 75px;
+  width: 100%;
+  border-radius: 0;
+}
+
+
+/*sections*/
+
+section h3, figcaption {
+  color: gray;
+}
+
+section h3 {
+  cursor: pointer;
+}
+
+
+/*section goodies*/
+
+section#goodies .galerie-synopsis {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+section#goodies .galerie-synopsis figure {
+  margin: 10px;
+}
+
+section#goodies .hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .1), 0 6px 20px 0 rgba(0, 0, 0, .3);
+}
+
+section#goodies .search-style {
+  width: 40%;
+}
+
+section#goodies .close-cars-modal {
+  font-size: 35px;
+  font-weight: bold;
+  position: absolute;
+  top: 2px;
+  right: 25px;
+  cursor: pointer;
+}
+
+section#goodies .panier .glyphicon {
+  color: #3095B4;
+}
+
+section#goodies .head-modal {
+  margin-top: 50px;
+}
+
+.head-modal, .items_tosell {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+section#goodies .modal {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: none;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  padding-top: 35px;
+  background-color: #E7E5BF;
+}
+
+section#goodies .modal-content {
+  position: relative;
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0;
+  background-color: #fefefe;
+}
+
+section#goodies ul {
+  list-style-type: none;
+}
+
+section#goodies button {
+  background-color: #3095B4;
+  /*#ff8c1b;*/
+  color: white;
+}
+
+
+/*end section goodies*/
+
+
+/*section principale*/
+
+section#presentation {
+  clear: both;
+}
+
+section#contact ul {
+  list-style-type: none;
+}
+
+section#contact .gliph {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 20px;
+  background-color: #ff8d1a;
+  /*#ebb332;*/
+  /*#B3D5FF;*/
+}
+
+section#contact .col-contactus {
+  color: white;
+  background-color: #222;
+}
+
+
+/*section galerie lightbox*/
+
+
+/*section navfun*/
+
+section#funbar {
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+
+div.fun-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+section#funbar figure {
+  text-align: center;
+}
+
+section#funbar button {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #ebb332;
+}
+
+section#funbar button:hover {
+  font-weight: bold;
+  color: #68abff;
+  border: 2px solid #68abff;
+  background-color: white;
+}
+
+section#galerie {
+  box-sizing: border-box;
+}
+
+section#galerie img {
+  width: 100%;
+}
+
+section#galerie .synopsis figure img {
+  width: 200px;
+  height: 128px;
+}
+
+section#galerie .synopsis {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*justify-content: space-between;*/
+}
+
+section#galerie .synopsis figure {
+  margin: 10px;
+}
+
+section#galerie img.hover-shadow {
+  transition: .3s;
+}
+
+section#galerie .hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .1), 0 6px 20px 0 rgba(0, 0, 0, .3);
+}
+
+section#galerie span.slide-number {
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  padding: 8px 12px;
+  color: #f2f2f2;
+}
+
+section#galerie .galerie-slides {
+  display: none;
+}
+
+section#galerie .previous-slide, .next-slide {
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 40%;
+  padding: 15px;
+  cursor: pointer;
+}
+
+section#galerie .next-slide {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+section#galerie .previous-slide {
+  border-radius: 0 3px 3px 0;
+}
+
+section#galerie .previous-slide:hover, .next-slide:hover {
+  background-color: rgba(0, 0, 0, .8);
+}
+
+section#galerie img.galerie-indicator {
+  opacity: .6;
+}
+
+section#galerie .galerie-indicator:hover {
+  opacity: 1;
+}
+
+section#galerie .caption-container {
+  padding: 2px 16px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+section#galerie .modal {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: none;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  padding-top: 35px;
+  background-color: black;
+}
+
+
+/* Modal Content */
+
+section#galerie .modal-content {
+  position: relative;
+  width: 50%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0;
+  background-color: #fefefe;
+}
+
+
+/* The Close Button */
+
+section#galerie .close-modal {
+  font-size: 35px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  color: white;
+}
+
+section#galerie .close-modal:hover, section#galerie .close-modal:focus {
+  cursor: pointer;
+  text-decoration: none;
+  color: #999;
+}
+
+
+/*end section lightbox*/
+
+
+/*fin section galerie*/
+
+
+/*main header */
